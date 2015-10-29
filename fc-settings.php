@@ -4,7 +4,7 @@ Plugin Name: FC Settings
 Plugin URI: http://www.formulaclick.com
 Description: Plugin para setear configuraciones comunes
 Author: Formula Click
-Version: 1.0
+Version: 1.1
 Author URI: http://www.formulaclick.com
 */
 
