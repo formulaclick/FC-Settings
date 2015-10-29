@@ -8,6 +8,18 @@ Version: 1.0
 Author URI: http://www.formulaclick.com
 */
 
+if( ! class_exists( 'FC_Updater' ) ){
+	include_once( plugin_dir_path( __FILE__ ) . 'updater.php' );
+}
+$updater = new FC_Updater( __FILE__ );
+$updater->set_username( 'formulaclick' );
+$updater->set_repository( 'fc-settings' );
+/* 
+	$updater->authorize( 'abcdefghijk1234567890' ); // Your auth code goes here for private repos
+*/
+$updater->initialize();
+
+
 /**
  * Eliminamos la barra admin del usuario
  */
